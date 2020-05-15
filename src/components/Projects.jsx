@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import bingemasters from '../gifs/bingemasters-gameplay.gif';
+import ibudget from '../gifs/iBudget-calc.gif';
+import jobfinder from '../gifs/jobfinder-search.gif';
+import eventify from  '../gifs/Eventify.gif';
+import { Card, Button } from 'react-bootstrap';
 
-const Card = styled.div`
+const ProjectCardBackground = styled.div`
     padding: 1rem;
     margin: 1rem;
     background: papayawhip;
@@ -14,12 +19,7 @@ const Wrapper = styled.section`
     justify-content: center;
 `;
 
-const CardWrapper = styled.div`
-    border: 1px solid black;
-    margin: 0.5rem;
-`;
-
-const Project = styled.div`
+const ProjectName = styled.div`
     display: flex;
     justify-content: center;
     padding: auto 0.5rem;
@@ -36,56 +36,124 @@ class Projects extends Component {
     render() { 
         return (  
             <div>
-                <Project><h2>Projects</h2></Project>
+                <ProjectName><h2>Projects</h2></ProjectName>
                 <Wrapper>
-                    <Card>
-                        <h4><a href="#">Project 1</a></h4>
-                        <CardWrapper>
-                            <h5>Project Description:</h5>
-                            <p>placeholder jabber text text text text text</p>
-                            <h5>Primary Responsibilities:</h5>
-                            <p>placeholder jibber jabbber text more text</p>
-                            <h5>Tech Stack:</h5>
-                            <p>placeholder jibber jabber woopie text text text asdasdasd</p>
-                        </CardWrapper>
-                    </Card>
-                    <Card>
-                        <h4><a href="#">Project 2</a></h4>
-                        <CardWrapper>
-                            <h5>Project Description:</h5>
-                            <p>placeholder jabber text text text text text</p>
-                            <h5>Primary Responsibilities:</h5>
-                            <p>placeholder jibber jabbber text more text</p>
-                            <h5>Tech Stack:</h5>
-                            <p>placeholder jibber jabber woopie text text text asdasdasd</p>
-                        </CardWrapper>
-                    </Card>
-                    <Card>
-                        <h4><a href="#">Project 3</a></h4>
-                        <CardWrapper>
-                            <h5>Project Description:</h5>
-                            <p>placeholder jabber text text text text text</p>
-                            <h5>Primary Responsibilities:</h5>
-                            <p>placeholder jibber jabbber text more text</p>
-                            <h5>Tech Stack:</h5>
-                            <p>placeholder jibber jabber woopie text text text asdasdasd</p>
-                        </CardWrapper>
-                    </Card>
-                    <Card>
-                        <h4><a href="#">Project 4</a></h4>
-                        <CardWrapper>
-                            <h5>Project Description:</h5>
-                            <p>placeholder jabber text text text text text</p>
-                            <h5>Primary Responsibilities:</h5>
-                            <p>placeholder jibber jabbber text more text</p>
-                            <h5>Tech Stack:</h5>
-                            <p>placeholder jibber jabber woopie text text text asdasdasd</p>
-                        </CardWrapper>
-                    </Card>
+                    <ProjectCardBackground>
+                        <Card style={{ width: '30rem' }}>
+                        <Card.Img variant="top" src={bingemasters}/>
+                        <Card.Body>
+                            <Card.Title>
+                                <a 
+                                    href="#" 
+                                    target='_blank' 
+                                    rel="noopener noreferrer"
+                                    >Bingemasters
+                                </a>
+                                </Card.Title>
+                            <Card.Title>Project Description:</Card.Title>
+                            <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                            </Card.Text>
+                            <Card.Title>Primary Responsibilities:</Card.Title>
+                            <Card.Text>
+                                placeholder Responsibilities text
+                            </Card.Text>
+                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Text>
+                                placeholder tech stack info
+                            </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </ProjectCardBackground>
+                    <ProjectCardBackground>
+                        <Card style={{ width: '30rem' }}>
+                        <Card.Img variant="top" src={ibudget} style={{marginBottom:'2rem'}}/>
+                        <Card.Body>
+                            <Card.Title>
+                                <a 
+                                    href="#" 
+                                    target='_blank' 
+                                    rel="noopener noreferrer"
+                                    >iBudget
+                                </a>
+                                </Card.Title>
+                            <Card.Title>Project Description:</Card.Title>
+                            <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                            </Card.Text>
+                            <Card.Title>Primary Responsibilities:</Card.Title>
+                            <Card.Text>
+                                placeholder Responsibilities text
+                            </Card.Text>
+                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Text>
+                                placeholder tech stack info
+                            </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </ProjectCardBackground>
+                    <ProjectCardBackground>
+                        <Card style={{ width: '30rem' }}>
+                        <Card.Img variant="top" src={jobfinder} style={{marginBottom:'1rem'}}/>
+                        <Card.Body>
+                            <Card.Title>
+                                <a 
+                                    href="#" 
+                                    target='_blank' 
+                                    rel="noopener noreferrer"
+                                    >JobFinder
+                                </a>
+                                </Card.Title>
+                            <Card.Title>Project Description:</Card.Title>
+                            <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                            </Card.Text>
+                            <Card.Title>Primary Responsibilities:</Card.Title>
+                            <Card.Text>
+                                placeholder Responsibilities text
+                            </Card.Text>
+                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Text>
+                                placeholder tech stack info
+                            </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </ProjectCardBackground>
+                    <ProjectCardBackground>
+                        <Card style={{ width: '30rem' }}>
+                        <Card.Img variant="top" src={eventify} style={{marginBottom:'1rem'}}/>
+                        <Card.Body>
+                            <Card.Title>
+                                <a 
+                                    href="#" 
+                                    target='_blank' 
+                                    rel="noopener noreferrer"
+                                    >Eventify
+                                </a>
+                            </Card.Title>
+                            <Card.Title>Project Description:</Card.Title>
+                            <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                            </Card.Text>
+                            <Card.Title>Primary Responsibilities:</Card.Title>
+                            <Card.Text>
+                                placeholder Responsibilities text
+                            </Card.Text>
+                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Text>
+                                placeholder tech stack info
+                            </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </ProjectCardBackground>
                 </Wrapper>
             </div>
         );
     }
 }
- 
+
 export default Projects;
