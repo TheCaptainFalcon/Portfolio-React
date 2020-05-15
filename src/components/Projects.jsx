@@ -44,24 +44,31 @@ class Projects extends Component {
                         <Card.Body>
                             <Card.Title>
                                 <a 
-                                    href="#" 
+                                    href="https://github.com/TheCaptainFalcon/bingemasters-demo" 
                                     target='_blank' 
                                     rel="noopener noreferrer"
-                                    >Bingemasters
+                                    >Bingemasters 
                                 </a>
                                 </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <p>Bingemasters is an actor guessing game, where an image of an actor appears on the screen and players attempt to correctly identify the actor.</p>
+                            <p>
+                                The goal of the game is to obtain the highest streak/score by consecutively answering correctly within the time limit. 
+                                In addition, having a high streak allows the user to post to the leaderboard.
+                            </p>
+                            <p>This was a fullstack capstone project, which was built in a 2-week time span.</p>
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                                placeholder Responsibilities text
+                                <p>
+                                    Implemented React Redux and Passport Google oAuth as part of authentication and tracking cookie sessions; 
+                                    used in allowing logged in users to view the leaderboard and to post to the leaderboard based on state passed as props. 
+                                </p>
                             </Card.Text>
-                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
-                                placeholder tech stack info
+                                MERN stack (MongoDB, Express, React, Node.js)
                             </Card.Text>
                         </Card.Body>
                         </Card>
@@ -72,7 +79,7 @@ class Projects extends Component {
                         <Card.Body>
                             <Card.Title>
                                 <a 
-                                    href="#" 
+                                    href="https://github.com/TheCaptainFalcon/DC_Week14" 
                                     target='_blank' 
                                     rel="noopener noreferrer"
                                     >iBudget
@@ -80,16 +87,18 @@ class Projects extends Component {
                                 </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <p>iBudget is a budget calculator app that uses your monthly income and expenses to determine your daily/weekly/monthly/bi-weekly/annual budgets.</p>
+                            <p>This mini solo project was built as a 1-week sprint using the React.js framework.</p>
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                                placeholder Responsibilities text
+                                <p>Usage of spread operator to track single to multiple states of income/expense input fields. </p>
+                                <p>Implementation of a pie chart for visual UI.</p>
+                                <p>React-Router for navbar navigation and tabs in a card setup per data analyis feature.</p>
                             </Card.Text>
-                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
-                                placeholder tech stack info
+                            HTML, CSS, JS, React
                             </Card.Text>
                         </Card.Body>
                         </Card>
@@ -100,7 +109,7 @@ class Projects extends Component {
                         <Card.Body>
                             <Card.Title>
                                 <a 
-                                    href="#" 
+                                    href="https://github.com/jamariod/JobFinder" 
                                     target='_blank' 
                                     rel="noopener noreferrer"
                                     >JobFinder
@@ -108,16 +117,15 @@ class Projects extends Component {
                                 </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Member of a 3-person team building a website that utilizes a database for registration and login authentication and obtains web scraped information from Indeed’s search parameters and results.
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                                placeholder Responsibilities text
+                            Creating the skeleton code, using Cheerio to web scrape Indeed’s job listings, and interactivity between handlebars, es6-template-engine, and fetch requests using Axios.
                             </Card.Text>
-                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
-                                placeholder tech stack info
+                                HTML, CSS, JS, Node.js, Express, PostgreSQL
                             </Card.Text>
                         </Card.Body>
                         </Card>
@@ -128,7 +136,7 @@ class Projects extends Component {
                         <Card.Body>
                             <Card.Title>
                                 <a 
-                                    href="#" 
+                                    href="https://github.com/TheCaptainFalcon/Eventify-Deploy" 
                                     target='_blank' 
                                     rel="noopener noreferrer"
                                     >Eventify
@@ -136,16 +144,15 @@ class Projects extends Component {
                             </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Led development efforts in a 3-person team building a website that obtains popular events based in GA and shows their precise locations on a map.
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                                placeholder Responsibilities text
+                            Researching and creating logic code, as well as data manipulation of Ticketmaster and Google Maps API through documentation and AJAX calls.
                             </Card.Text>
-                            <Card.Title>Tech Stack</Card.Title>
+                            <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
-                                placeholder tech stack info
+                                HTML, CSS, JS, jQuery
                             </Card.Text>
                         </Card.Body>
                         </Card>
