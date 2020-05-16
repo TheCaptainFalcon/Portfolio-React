@@ -4,7 +4,7 @@ import bingemasters from '../gifs/bingemasters-gameplay.gif';
 import ibudget from '../gifs/iBudget-calc.gif';
 import jobfinder from '../gifs/jobfinder-search.gif';
 import eventify from  '../gifs/Eventify.gif';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 const ProjectCardBackground = styled.div`
     padding: 1rem;
@@ -49,22 +49,22 @@ class Projects extends Component {
                                     rel="noopener noreferrer"
                                     >Bingemasters 
                                 </a>
-                                </Card.Title>
+                            </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            <p>Bingemasters is an actor guessing game, where an image of an actor appears on the screen and players attempt to correctly identify the actor.</p>
-                            <p>
+                                Bingemasters is an actor guessing game, where an image of an actor appears on the screen and players attempt to correctly identify the actor.
+                            </Card.Text>
+                            <Card.Text>
                                 The goal of the game is to obtain the highest streak/score by consecutively answering correctly within the time limit. 
                                 In addition, having a high streak allows the user to post to the leaderboard.
-                            </p>
-                            <p>This was a fullstack capstone project, which was built in a 2-week time span.</p>
+                            </Card.Text>
+                            <Card.Text>
+                                This was a fullstack capstone project, which was built in a 2-week time span.
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                                <p>
                                     Implemented React Redux and Passport Google oAuth as part of authentication and tracking cookie sessions; 
                                     used in allowing logged in users to view the leaderboard and to post to the leaderboard based on state passed as props. 
-                                </p>
                             </Card.Text>
                             <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
@@ -87,18 +87,18 @@ class Projects extends Component {
                                 </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            <p>iBudget is a budget calculator app that uses your monthly income and expenses to determine your daily/weekly/monthly/bi-weekly/annual budgets.</p>
-                            <p>This mini solo project was built as a 1-week sprint using the React.js framework.</p>
+                                iBudget is a budget calculator app that uses your monthly income and expenses to determine your daily/weekly/monthly/bi-weekly/annual budgets.
+                                This mini solo project was built as a 1-week sprint using the React.js framework.
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                                <p>Usage of spread operator to track single to multiple states of income/expense input fields. </p>
-                                <p>Implementation of a pie chart for visual UI.</p>
-                                <p>React-Router for navbar navigation and tabs in a card setup per data analyis feature.</p>
+                                Usage of spread operator to track single to multiple states of income/expense input fields. 
+                                Implementation of a pie chart for visual UI.
+                                React-Router for navbar navigation and tabs in a card setup per data analyis feature.
                             </Card.Text>
                             <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
-                            HTML, CSS, JS, React
+                                HTML, CSS, JS, React
                             </Card.Text>
                         </Card.Body>
                         </Card>
@@ -117,11 +117,11 @@ class Projects extends Component {
                                 </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            Member of a 3-person team building a website that utilizes a database for registration and login authentication and obtains web scraped information from Indeed’s search parameters and results.
+                                Member of a 3-person team building a website that utilizes a database for registration and login authentication and obtains web scraped information from Indeed’s search parameters and results.
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                            Creating the skeleton code, using Cheerio to web scrape Indeed’s job listings, and interactivity between handlebars, es6-template-engine, and fetch requests using Axios.
+                                Creating the skeleton code, using Cheerio to web scrape Indeed’s job listings, and interactivity between handlebars, es6-template-engine, and fetch requests using Axios.
                             </Card.Text>
                             <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
@@ -144,11 +144,11 @@ class Projects extends Component {
                             </Card.Title>
                             <Card.Title>Project Description:</Card.Title>
                             <Card.Text>
-                            Led development efforts in a 3-person team building a website that obtains popular events based in GA and shows their precise locations on a map.
+                                Led development efforts in a 3-person team building a website that obtains popular events based in GA and shows their precise locations on a map.
                             </Card.Text>
                             <Card.Title>Primary Responsibilities:</Card.Title>
                             <Card.Text>
-                            Researching and creating logic code, as well as data manipulation of Ticketmaster and Google Maps API through documentation and AJAX calls.
+                                Researching and creating logic code, as well as data manipulation of Ticketmaster and Google Maps API through documentation and AJAX calls.
                             </Card.Text>
                             <Card.Title>Tech Stack:</Card.Title>
                             <Card.Text>
