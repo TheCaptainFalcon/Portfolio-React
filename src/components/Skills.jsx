@@ -32,44 +32,44 @@ class Skills extends Component {
         return (  
             <div>
                 <SkillsName>Software Developer Skills</SkillsName>
-                <CardDeck style={{margin: 'auto 0.5rem'}}>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                <CardDeck style={{margin: 'auto 0.5rem', display: 'flex', flexWrap: 'wrap', justifyContent:'center'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={html} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={css} />   
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={js} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={bootstrap} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={jquery} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={python} />
                     </Card>
-
+                
                 </CardDeck>
-                <CardDeck style={{margin: 'auto 0.5rem'}}>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                <CardDeck style={{margin: 'auto 0.5rem', display: 'flex', flexWrap: 'wrap', justifyContent:'center'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={react} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={git} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={node} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={express} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={psql} />
                     </Card>
-                    <Card style={{margin:'1rem 0.5rem'}}>
+                    <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem'}}>
                         <Card.Img variant="top" src={html} />
                     </Card>
                 </CardDeck>
