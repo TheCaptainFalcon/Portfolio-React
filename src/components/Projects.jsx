@@ -158,7 +158,11 @@ class Projects extends Component {
                         </Card>
                     </ProjectCardBackground>
                 </Wrapper>
+                <Card.Footer className="text-muted" style={{display:'flex', justifyContent:'center', marginTop:'0.5rem'}}>
+                    Powered by React, React-Bootstrap, Styled-Components, Giphify, Photoshop ES6 and plenty of coffee
+                </Card.Footer>
             </div>
+            
         );
     }
 }

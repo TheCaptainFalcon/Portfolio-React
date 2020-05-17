@@ -48,15 +48,9 @@ class Portfolio extends Component {
 
     render() { 
         return (  
-            <div>
-                <ListGroup>
-                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                    <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                    <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                </ListGroup>
-                <div>
+            <div style={{marginTop:'4rem'}}>
+                
+                <div style={{backgroundColor: ''}}>
                     <LandingWrapper> 
                         <LandingCardBackground>
                             <Card style={{ maxWidth: '50rem' }}>
