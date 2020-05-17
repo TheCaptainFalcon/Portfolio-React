@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CV from '../cv/Joseph_Kim_Software_Dev.pdf';
-import { Nav, Navbar, Card, CardDeck, ListGroup, Container  } from 'react-bootstrap';
+import { Nav, Navbar, Card, CardDeck } from 'react-bootstrap';
 import styled from 'styled-components';
 import ScrollspyNav from 'react-scrollspy-nav';
 import profilePic from '../images/rightPic2.png';
@@ -22,6 +22,15 @@ import bingemasters from '../gifs/bingemasters-gameplay.gif';
 import ibudget from '../gifs/iBudget-calc.gif';
 import jobfinder from '../gifs/jobfinder-search.gif';
 import eventify from  '../gifs/Eventify.gif';
+import mongodb from '../images/mongodb.png';
+
+const SocialButton = styled.button`
+    color: black;
+    :hover {color: #007bff};
+    transition: color .1s;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px gray;
+`;
 
 const SkillsName = styled.h2`
     display: flex;
@@ -30,6 +39,7 @@ const SkillsName = styled.h2`
     border: 1px solid black;
     border-radius: 5px;
     margin: 1rem;
+    background-color: white;
 `;
 
 const NameTitle = styled.h1`
@@ -86,6 +96,7 @@ const ProjectName = styled.div`
     border: 1px solid black;
     border-radius: 5px;
     margin: 1rem;
+    background-color: white;
 `;
 
 class AllComponents extends Component {
@@ -95,17 +106,17 @@ class AllComponents extends Component {
     }
     render() { 
         return ( 
-            <div> 
+            <div style={{backgroundColor: '#d5e5ff'}}> 
             <div>
                 <ScrollspyNav
-                    scrollTargetIds={["skills", "projects", ""]}
+                    scrollTargetIds={["skills", "projects"]}
                     offset={100}
                     activeNavClass="is-active"
                     scrollDuration="1000"
                     headerBackground="true"
                 >
-                    <Navbar fixed="top" bg="dark" variant="dark">
-                        <Navbar.Brand href="#">(Li img)</Navbar.Brand>
+                    <Navbar style={{display:'flex', justifyContent:'center'}}fixed="top" bg="dark" variant="dark">
+                       
                             <Nav className="mr-auto">
                                 <Nav.Link href="#">Introduction</Nav.Link>
                                 <Nav.Link href="#skills">Skills</Nav.Link>
@@ -114,7 +125,7 @@ class AllComponents extends Component {
                     </Navbar>
                 </ScrollspyNav>
             </div>
-            <div style={{marginTop:'4rem'}}>
+            <div style={{marginTop:'3rem'}}>
                 
             <div style={{backgroundColor: ''}}>
                 <LandingWrapper> 
@@ -151,9 +162,15 @@ class AllComponents extends Component {
                                     If interested, please email me at josephkim570@gmail.com
                                 </Card.Text>
                                 <Card.Text id="skills" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around'}}>
-                                    <a href={CV} target='_blank' rel="noopener noreferrer"><button>Download CV <FontAwesomeIcon icon={faFileDownload}/></button></a>
-                                    <a href="https://www.github.com/TheCaptainFalcon" target='_blank' rel="noopener noreferrer"><button>Github <FontAwesomeIcon icon={faGithub}/></button></a>
-                                    <a href="https://www.linkedin.com/in/josephkim570" target='_blank' rel="noopener noreferrer"><button>Linkedin <FontAwesomeIcon icon={faLinkedin}/></button></a>
+                                    <a href={CV} target='_blank' rel="noopener noreferrer"><SocialButton>Download CV <FontAwesomeIcon icon={faFileDownload}/></SocialButton></a>
+                                    <a href="https://www.github.com/TheCaptainFalcon" 
+                                        target='_blank' 
+                                        rel="noopener noreferrer">
+                                            <SocialButton>Github <FontAwesomeIcon icon={faGithub}/></SocialButton></a>
+                                    <a href="https://www.linkedin.com/in/josephkim570" 
+                                        target='_blank' 
+                                        rel="noopener noreferrer">
+                                            <SocialButton>LinkedIn <FontAwesomeIcon icon={faLinkedin}/></SocialButton></a>
                                 </Card.Text>
                                 <Card.Text>
                                     
@@ -204,7 +221,7 @@ class AllComponents extends Component {
                 <Card.Img variant="top" src={psql} />
             </Card>
             <Card style={{margin:'1rem 0.5rem', minWidth: '9rem', maxWidth: '12rem', boxShadow:'2px 2px 2px 2px gray'}}>
-                <Card.Img variant="top" src={html} />
+                <Card.Img variant="top" src={mongodb} />
             </Card>
         </CardDeck>
     </div>
@@ -261,12 +278,18 @@ class AllComponents extends Component {
                 <Card.Title>Project Description:</Card.Title>
                 <Card.Text>
                     iBudget is a budget calculator app that uses your monthly income and expenses to determine your daily/weekly/monthly/bi-weekly/annual budgets.
+                </Card.Text>
+                <Card.Text>    
                     This mini solo project was built as a 1-week sprint using the React.js framework.
                 </Card.Text>
                 <Card.Title>Primary Responsibilities:</Card.Title>
                 <Card.Text>
                     Usage of spread operator to track single to multiple states of income/expense input fields. 
+                </Card.Text>
+                <Card.Text>
                     Implementation of a pie chart for visual UI.
+                </Card.Text>
+                <Card.Text>
                     React-Router for navbar navigation and tabs in a card setup per data analyis feature.
                 </Card.Text>
                 <Card.Title>Tech Stack:</Card.Title>
@@ -331,8 +354,8 @@ class AllComponents extends Component {
             </Card>
         </ProjectCardBackground>
     </Wrapper>
-    <Card.Footer className="text-muted" style={{display:'flex', justifyContent:'center', marginTop:'0.5rem'}}>
-        Powered by React, React-Bootstrap, Styled-Components, Font-Awesome, Giphify, Photoshop ES6 and plenty of coffee
+    <Card.Footer style={{display:'flex', justifyContent:'center', marginTop:'0.5rem'}}>
+        Powered by React, React-Bootstrap, Styled-Components, Font-Awesome, Giphify, Photoshop CS6 and plenty of coffee
     </Card.Footer>
 </div>
 </div>
