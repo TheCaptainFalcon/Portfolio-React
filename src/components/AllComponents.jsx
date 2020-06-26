@@ -23,6 +23,8 @@ import ibudget from '../gifs/iBudget-calc.gif';
 import jobfinder from '../gifs/jobfinder-search.gif';
 import eventify from  '../gifs/Eventify.gif';
 import mongodb from '../images/mongodb.png';
+import property from '../gifs/Login-Listing.gif';
+import wip from '../images/work-in-progress.jpg';
 
 const SocialButton = styled.button`
     color: black;
@@ -109,7 +111,7 @@ class AllComponents extends Component {
             <div style={{backgroundColor: '#d5e5ff'}}> 
             <div>
                 <ScrollspyNav
-                    scrollTargetIds={["skills", "projects"]}
+                    scrollTargetIds={["skills", "projects", "sideProjects"]}
                     offset={100}
                     activeNavClass="is-active"
                     scrollDuration="1000"
@@ -121,6 +123,7 @@ class AllComponents extends Component {
                                 <Nav.Link href="#">Introduction</Nav.Link>
                                 <Nav.Link href="#skills">Skills</Nav.Link>
                                 <Nav.Link href="#projects">Projects</Nav.Link>
+                                <Nav.Link href="#sideProjects">Side-Projects</Nav.Link>
                             </Nav>
                     </Navbar>
                 </ScrollspyNav>
@@ -133,7 +136,7 @@ class AllComponents extends Component {
                         <Card style={{ maxWidth: '50rem' }}>
                             <Card.Body>
                                 <EmptyLandingCardBackground>
-                                    <img src={ profilePic } alt='profile'style={{boxShadow: '3px 3px 3px 4px gray'}}></img>
+                                    <img src={ profilePic } alt='profile' style={{boxShadow: '3px 3px 3px 4px gray'}}></img>
                                 </EmptyLandingCardBackground>
                                 <NameTitle>I'm Joseph Kim</NameTitle>
                                 <JobTitle>Software Developer</JobTitle>
@@ -230,7 +233,7 @@ class AllComponents extends Component {
     <Wrapper>
         <ProjectCardBackground>
             <Card style={{ width: '30rem' }}>
-            <Card.Img variant="top" src={bingemasters}/>
+            <Card.Img variant="top" src={bingemasters} alt='bingemasters gif'/>
             <Card.Body>
                 <Card.Title>
                     <a 
@@ -265,7 +268,7 @@ class AllComponents extends Component {
         </ProjectCardBackground>
         <ProjectCardBackground>
             <Card style={{ width: '30rem' }}>
-            <Card.Img variant="top" src={ibudget} style={{marginBottom:'2rem'}}/>
+            <Card.Img variant="top" src={ibudget} alt='ibudget gif' style={{marginBottom:'2rem'}}/>
             <Card.Body>
                 <Card.Title>
                     <a 
@@ -301,7 +304,7 @@ class AllComponents extends Component {
         </ProjectCardBackground>
         <ProjectCardBackground>
             <Card style={{ width: '30rem' }}>
-            <Card.Img variant="top" src={jobfinder} style={{marginBottom:'1rem'}}/>
+            <Card.Img variant="top" src={jobfinder} alt='jobfinder gif' style={{marginBottom:'1rem'}}/>
             <Card.Body>
                 <Card.Title>
                     <a 
@@ -328,7 +331,7 @@ class AllComponents extends Component {
         </ProjectCardBackground>
         <ProjectCardBackground>
             <Card style={{ width: '30rem' }}>
-            <Card.Img variant="top" src={eventify} style={{marginBottom:'1rem'}}/>
+            <Card.Img variant="top" src={eventify} alt='eventify gif' style={{marginBottom:'1rem'}}/>
             <Card.Body>
                 <Card.Title>
                     <a 
@@ -354,6 +357,81 @@ class AllComponents extends Component {
             </Card>
         </ProjectCardBackground>
     </Wrapper>
+    <ProjectName id='sideProjects'><h2>Side Projects</h2></ProjectName>
+    <Wrapper>
+    <ProjectCardBackground>
+            <Card style={{ width: '30rem' }}>
+            <Card.Img variant="top" src={wip} alt='work in progress'/>
+            <Card.Body>
+                <Card.Title>
+                    <a 
+                        href="https://github.com/TheCaptainFalcon/iBudget_v2" 
+                        target='_blank' 
+                        rel="noopener noreferrer"
+                        > iBudget v2 (In Progress)
+                    </a>
+                </Card.Title>
+                <Card.Title>Project Description:</Card.Title>
+                <Card.Text>
+                    iBudget v2 is the upgraded version of the original iBudget application from the solo react project. 
+                </Card.Text>
+                <Card.Text>                    
+                    The plan is to create an AIO financial app with features focused on budgeting, investing, and portfolio management.
+                </Card.Text>
+                <Card.Text>
+                    This project uses ContextAPI for global state management with plans to use sessionStorage as a means to replace the needed backend database functionality.
+                </Card.Text>
+                <Card.Title>Future Features:</Card.Title>
+                <Card.Text>
+                    A method of comparison for debt management in installments plans vs investment plans given data such as, interest, time, additional contributions and its frequencies, etc.
+                </Card.Text>
+                <Card.Text>                    
+                    Income/expense history with in-depth analysis and investment portfolio breakdown.
+                </Card.Text>
+                <Card.Title>Tech Stack:</Card.Title>
+                <Card.Text>
+                    React, JS, HTML, CSS
+                </Card.Text>
+            </Card.Body>
+            </Card>
+        </ProjectCardBackground>
+        <ProjectCardBackground>
+            <Card style={{ width: '30rem' }}>
+            <Card.Img variant="top" src={property} alt='property listing gif'/>
+            <Card.Body>
+                <Card.Title>
+                    <a 
+                        href="https://github.com/TheCaptainFalcon/Property_Listing" 
+                        target='_blank' 
+                        rel="noopener noreferrer"
+                        > Property Listing 
+                    </a>
+                </Card.Title>
+                <Card.Title>Project Description:</Card.Title>
+                <Card.Text>
+                    Property Listing is a mini project that focuses on a small scale version of a Real Estate Multiple Listing Service (MLS) for personal usage.
+                </Card.Text>
+                <Card.Text>
+                    This project was built as a means to tackle user authentication through Passport JSON Web Tokens (JWT) and Bearer tokens, and to implement modal with timer-based events.
+                </Card.Text>
+                <Card.Text>
+                    In addition, this was built to replace the messy code used in Passport Google Strategy OAuth from the capstone project.
+                </Card.Text>
+                <Card.Title>Primary Features:</Card.Title>
+                <Card.Text>
+                    User authentication with JWT and hashed + salted passwords, which ultimately allow for private routes and actions including, posting and removal of listings.
+                </Card.Text>
+                <Card.Text>                    
+                    Pop-up confirmation modal with a timer that automatically redirects at state 0.
+                </Card.Text>
+                <Card.Title>Tech Stack:</Card.Title>
+                <Card.Text>
+                    MERN stack (MongoDB, Express, React, Node.js)
+                </Card.Text>
+            </Card.Body>
+            </Card>
+        </ProjectCardBackground>
+        </Wrapper>
     <Card.Footer style={{display:'flex', justifyContent:'center', marginTop:'0.5rem'}}>
         Powered by React, React-Bootstrap, Styled-Components, Font-Awesome, Giphify, Photoshop CS6 and plenty of coffee
     </Card.Footer>
