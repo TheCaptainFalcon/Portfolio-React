@@ -368,29 +368,32 @@ class AllComponents extends Component {
                         href="https://github.com/TheCaptainFalcon/iBudget_v2" 
                         target='_blank' 
                         rel="noopener noreferrer"
-                        > iBudget v2 (In Progress)
+                        > Bingemasters v2 (In Progress)
                     </a>
                 </Card.Title>
                 <Card.Title>Project Description:</Card.Title>
                 <Card.Text>
-                    iBudget v2 is the upgraded version of the original iBudget application from the solo react project. 
+                    Bingemasters v2 is the upgraded version of the original fullstack application from the capstone.
                 </Card.Text>
                 <Card.Text>                    
-                    The plan is to create an AIO financial app with features focused on budgeting, investing, and portfolio management.
+                    The plan is to refactor the Passport authentication method from Google Strategy to JWT and to add additional features commonly found in a game-like environment.
                 </Card.Text>
-                <Card.Text>
-                    This project uses ContextAPI for global state management with plans to use sessionStorage as a means to replace the needed backend database functionality.
+                <Card.Text>                    
+                    After a stable desktop version is determined, rehaul into a transitional phase to mobile via React-Native.
                 </Card.Text>
                 <Card.Title>Future Features:</Card.Title>
                 <Card.Text>
-                    A method of comparison for debt management in installments plans vs investment plans given data such as, interest, time, additional contributions and its frequencies, etc.
+                    Initially disabled modal behavior recoded and (re)implemented into the project.
                 </Card.Text>
                 <Card.Text>                    
-                    Income/expense history with in-depth analysis and investment portfolio breakdown.
+                    Adding more game modes with associated high score leaderboards for each mode.
+                </Card.Text>
+                <Card.Text>                    
+                    **Far end goal: Released on the Apple/Android app stores.
                 </Card.Text>
                 <Card.Title>Tech Stack:</Card.Title>
                 <Card.Text>
-                    React, JS, HTML, CSS
+                    MERN stack (MongoDB, Express, React, Node.js)
                 </Card.Text>
             </Card.Body>
             </Card>
