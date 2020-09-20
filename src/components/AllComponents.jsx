@@ -365,35 +365,36 @@ class AllComponents extends Component {
             <Card.Body>
                 <Card.Title>
                     <a 
-                        href="https://github.com/TheCaptainFalcon/iBudget_v2" 
+                        href="https://github.com/TheCaptainFalcon/angular-eshop" 
                         target='_blank' 
                         rel="noopener noreferrer"
-                        > Bingemasters v2 (In Progress)
+                        >Angular E-Shop
                     </a>
                 </Card.Title>
                 <Card.Title>Project Description:</Card.Title>
                 <Card.Text>
-                    Bingemasters v2 is the upgraded version of the original fullstack application from the capstone.
+                    This is a development repo for an e-commerce site that focuses on baked goods. 
+                </Card.Text>
+                <Card.Text style={{fontStyle:'italic'}}>
+                    *Intentionally separate from the production repo for security purposes, but code is very similar*
                 </Card.Text>
                 <Card.Text>                    
-                    The plan is to refactor the Passport authentication method from Google Strategy to JWT and to add additional features commonly found in a game-like environment.
+                    To match the scalability and faster launch date, we are using Firebase to serve the backend needs (database, authentication, etc).
                 </Card.Text>
-                <Card.Text>                    
-                    After a stable desktop version is determined, rehaul into a transitional phase to mobile via React-Native.
-                </Card.Text>
-                <Card.Title>Future Features:</Card.Title>
+                <Card.Title>Current Features:</Card.Title>
                 <Card.Text>
-                    Initially disabled modal behavior recoded and (re)implemented into the project.
+                    Product management page with a filtering search bar, sorting, and pagination.
                 </Card.Text>
                 <Card.Text>                    
-                    Adding more game modes with associated high score leaderboards for each mode.
+                    Proper authentication with email/password credentials and authorization through protected routes. 
                 </Card.Text>
                 <Card.Text>                    
-                    **Far end goal: Released on the Apple/Android app stores.
+                    Editting specific products to reflect title, description, prices, and image url. 
+                    Text and image are shown asynchronously in a card format to see immediate changes before saving to the database.
                 </Card.Text>
                 <Card.Title>Tech Stack:</Card.Title>
                 <Card.Text>
-                    MERN stack (MongoDB, Express, React, Node.js)
+                    Angular framework (HTML, SCSS, TS), Material as SCSS/CSS framework, Firebase (backend).
                 </Card.Text>
             </Card.Body>
             </Card>
